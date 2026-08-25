@@ -60,3 +60,63 @@ var y = 30;
 var y = 40; // Re-definition is allowed
 y = 50; // updates are also allowed
 console.log(y);
+
+// Basic Operators
+
+// Arithmetic Operators: +, -, *, /, %, **
+
+let a = 10;
+let b = 5;
+console.log(a + b); // ADDITION
+console.log(a - b); // SUBTRACTION
+console.log(a * b); // MULTIPLICATION
+console.log(a / b); // DIVISION
+console.log(a % b); // MODULUS
+console.log(a ** b); // EXPONENTIATION
+
+// Assignment Operators:-
+
+let d = 10;
+d++;
+console.log(d); // increment 11
+
+let e = 9;
+e--;
+console.log(e); // decrement 8
+
+let f = 10;
+f += 90;
+console.log(f); // assignment 100
+
+let g = 90;
+g -= 10;
+console.log(g); // assignment 80
+
+// Comparison operators
+
+const ageSuhag = 23;
+const ageTrisha = 18;
+console.log(ageSuhag > ageTrisha);
+console.log(ageSuhag < ageTrisha);
+
+const DrinkAge = 18;
+if (ageSuhag >= DrinkAge) {
+  console.log("You can have a drink");
+} else {
+  console.log("You are not allowed to drink");
+}
+
+// Coding Challenge #1
+
+/*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
+
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs using the formula (you can even implement both versions)
+3. Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
+
+TEST DATA 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
+
+GOOD LUCK 😀
+*/
