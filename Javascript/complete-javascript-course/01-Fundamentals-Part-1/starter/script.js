@@ -281,3 +281,34 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else {
   console.log("No one wins the trophy 😭");
 }
+
+// The switch Statement
+
+/*
+const day = String(prompt("Enter the day of the week"));
+switch (day) {
+  case "monday":
+    console.log("Start of the week");
+    break;
+  case "tuesday":
+    console.log("second day of the week");
+    break;
+  case "wednesday":
+    console.log("mid week");
+    break;
+  case "thursday":
+    console.log("one last stretch");
+    break;
+  case "friday":
+    console.log("weekend is here");
+    break;
+  case "saturday":
+    console.log("weekend is here");
+    break;
+  case "sunday":
+    console.log("weekend is here");
+    break;
+  default:
+    console.log("Not a valid day");
+}
+*/
