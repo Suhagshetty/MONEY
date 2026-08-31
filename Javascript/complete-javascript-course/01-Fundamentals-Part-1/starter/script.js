@@ -121,6 +121,7 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 GOOD LUCK 😀
 */
 
+/*
 const massMark = 78;
 const massJohn = 92;
 const heightMark = 1.69;
@@ -134,6 +135,7 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John has higher BMI than Mark ${BMIJohn}`);
 }
+*/
 
 // Strings and Template Literals
 const fName = "Suhag";
@@ -167,3 +169,15 @@ HINT: Use an if/else statement 😉
 
 GOOD LUCK 😀
 */
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.85;
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / heightJohn ** 2;
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI ${BMIMark} is higher than John's BMI ${BMIJohn}`);
+} else {
+  console.log(`John's BMI ${BMIJohn} is higher than Marks's BMI ${BMIMark}`);
+}
