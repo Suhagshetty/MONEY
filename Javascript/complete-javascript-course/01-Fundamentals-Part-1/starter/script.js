@@ -211,7 +211,7 @@ console.log(check == 18); // TRUE
 console.log(check === 18); // FALSE
 
 /*
-const fav = Number(prompt("What is your favourite number?"));
+const fav = Number(prompt("What is your favorite number?"));
 console.log(fav);
 console.log(typeof fav);
 if (fav === 23) {
@@ -223,3 +223,25 @@ if (fav === 23) {
 }
 if (fav !== 23) console.log("Why not 23");
 */
+
+// Logical Operators
+
+const hasDriverLicense = true;
+const hasGoodVision = true;
+// && both condition must be true. || any one condition must be true. ! inverts the response
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+if (hasDriverLicense && hasGoodVision) {
+  console.log("U can Drive");
+} else {
+  console.log("Don't touch my damn keys");
+}
+
+const isTired = false;
+if (hasGoodVision && hasDriverLicense && isTired) {
+  console.log("u can drive");
+} else {
+  console.log("u cannot drive get some help");
+}
