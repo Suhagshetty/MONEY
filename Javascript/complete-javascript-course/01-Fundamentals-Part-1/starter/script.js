@@ -134,3 +134,11 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John has higher BMI than Mark ${BMIJohn}`);
 }
+
+// Strings and Template Literals
+const fName = "Suhag";
+const job = "Software Engineer";
+const currentYear = 2026;
+const friends = ["Srujan", "Shashi", "Rachitha", "Vijay"];
+const infoSuhag = `I am ${fName} a ${job} and the current year is ${currentYear} and my friends are ${friends}`;
+console.log(infoSuhag);
