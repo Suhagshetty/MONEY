@@ -156,6 +156,13 @@ if (age < DrinkAge) {
   console.log("You can drink");
 }
 
+const money = 100;
+if (money < 100) {
+  console.log("Do not spend it all");
+} else {
+  console.log("You can spend it");
+}
+
 ////////////////////////////////////
 // Coding Challenge #2
 
@@ -181,3 +188,20 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI ${BMIJohn} is higher than Marks's BMI ${BMIMark}`);
 }
+
+// Truthy and Falsy Values:- 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(""));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+const height = 0;
+if (height) {
+  console.log("Height is defined");
+} else {
+  console.log("Height is undefined");
+}
+
+// Equality Operators: == vs. ===
