@@ -205,3 +205,21 @@ if (height) {
 }
 
 // Equality Operators: == vs. ===
+
+const check = "18";
+console.log(check == 18); // TRUE
+console.log(check === 18); // FALSE
+
+/*
+const fav = Number(prompt("What is your favourite number?"));
+console.log(fav);
+console.log(typeof fav);
+if (fav === 23) {
+  console.log("23 is an amazing number");
+} else if (fav === 17) {
+  console.log("17 is also a good number");
+} else {
+  console.log("Number is not 23 or 17");
+}
+if (fav !== 23) console.log("Why not 23");
+*/
