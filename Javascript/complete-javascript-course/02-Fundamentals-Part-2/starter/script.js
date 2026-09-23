@@ -59,3 +59,17 @@ Extract their names
 Convert names to uppercase
 Sort them alphabetically
  */
+
+const users = [
+  { id: 1, name: "Suhag", active: true, role: "developer" },
+  { id: 2, name: "Rahul", active: false, role: "designer" },
+  { id: 3, name: "Ananya", active: true, role: "developer" },
+  { id: 4, name: "Arjun", active: true, role: "manager" },
+];
+
+const activeDeveloperNames = users
+  .filter((user) => user.active && user.role === "developer")
+  .map((user) => user.name.toUpperCase())
+  .sort((a, b) => a.localeCompare(b));
+
+console.log(activeDeveloperNames);
