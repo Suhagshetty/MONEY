@@ -109,3 +109,41 @@ console.log(friends.indexOf("Sumana")); // -1
 
 console.log(friends.includes("Suhag")); // TRUE
 console.log(friends.includes("Sumana")); // FALSE
+
+// Example: Customer Support Ticket Queue
+
+let tickets = ["Login Issue", "Payment Failed", "Account Locked"];
+// 1. New normal ticket arrives
+tickets.push("Profile Update");
+console.log(tickets);
+// ["Login Issue", "Payment Failed", "Account Locked", "Profile Update"]
+
+// 2. VIP Member has an urgent request/issue
+tickets.unshift("VIP: Password Reset");
+console.log(tickets);
+// ["VIP: Password Reset", "Login Issue", "Payment Failed",
+//  "Account Locked", "Profile Update"]
+
+// 3. Support agent takes first ticket
+
+let currentTicket = tickets.shift();
+console.log("Working on: ", currentTicket);
+console.log(tickets);
+// ["Login Issue", "Payment Failed", "Account Locked", "Profile Update"]
+
+// 4. Check whether ticket exists
+if (tickets.includes("Payment Failed")) {
+  console.log("Payment issue already exists");
+}
+
+// 5. Find position of ticket
+
+let postition = tickets.indexOf("Account Locked");
+console.log("Ticket Position: ", postition);
+// 6. Last ticket was added accidentally, so remove it
+
+let removedTicket = tickets.pop();
+console.log("Removed:", removedTicket);
+// Removed: Profile Update
+console.log("Final Queue:", tickets);
+// ["Login Issue", "Payment Failed", "Account Locked"]
