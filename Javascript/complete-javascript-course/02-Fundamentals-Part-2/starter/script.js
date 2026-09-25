@@ -256,3 +256,9 @@ if (mark.calcBmi() > John.calcBMI) {
 } else {
   console.log("John has Higher BMI");
 }
+
+// The for Loop
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
