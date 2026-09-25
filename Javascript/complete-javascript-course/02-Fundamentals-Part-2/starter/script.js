@@ -176,3 +176,42 @@ if (Suhag[infoSuhag]) {
     "Wrong request/;- Choose between his first,last name his age , his job or his instgram account, friends or his location",
   );
 }
+
+// Challenge: Employee Management System
+
+const employee = {
+  firstName: "Arjun",
+  lastName: "Rao",
+  birthYear: 2002,
+  role: "Frontend Developer",
+  skills: ["JavaScript", "React", "HTML"],
+};
+
+// Print entire object
+console.log(employee);
+
+// Dot notation
+console.log(employee.firstName);
+
+// Bracket notation
+console.log(employee["role"]);
+
+// Add new properties
+employee.company = "Capgemini";
+employee.location = "EPIP Whitefield";
+
+// Add skill
+employee.skills.push("TypeScript");
+
+// Calculate age using existing object data
+employee.age = 2026 - employee.birthYear;
+
+// Ask user
+const request = prompt("What do you want to know about the employee?");
+
+// Dynamic property access
+if (employee[request]) {
+  console.log(employee[request]);
+} else {
+  console.log("Invalid request. Please try again.");
+}
