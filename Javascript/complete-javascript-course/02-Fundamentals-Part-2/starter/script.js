@@ -158,4 +158,21 @@ const Suhag = {
   friends: ["Rahul", "Karan", "Mukesh"],
 };
 console.log(`This is my object:-`, Suhag);
-// Dot vs. Bracket Notation
+
+// Dot vs. Bracket Notation:- both are used to access objects
+
+console.log(Suhag.lastName); // Shetty
+console.log(Suhag["firstName"]); // Suhag
+
+Suhag.location = "India";
+Suhag.instagram = "_.suhagshetty";
+console.log(Suhag);
+
+const infoSuhag = prompt("What do you want to know about Suhag?");
+if (Suhag[infoSuhag]) {
+  console.log(Suhag[infoSuhag]);
+} else {
+  console.log(
+    "Wrong request/;- Choose between his first,last name his age , his job or his instgram account, friends or his location",
+  );
+}
