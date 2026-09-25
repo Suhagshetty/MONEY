@@ -147,3 +147,15 @@ console.log("Removed:", removedTicket);
 // Removed: Profile Update
 console.log("Final Queue:", tickets);
 // ["Login Issue", "Payment Failed", "Account Locked"]
+
+// Introduction To Objects in Javascript:- An object is a collection of properties, where each property is defined as a key-value pair. Objects allow you to group related data and functionality together, making it easier to organize and manage complex information in your code.
+
+const Suhag = {
+  firstName: "Suhag",
+  lastName: "Shetty",
+  age: 2026 - 2003,
+  job: "Software Engineer",
+  friends: ["Rahul", "Karan", "Mukesh"],
+};
+console.log(`This is my object:-`, Suhag);
+// Dot vs. Bracket Notation
