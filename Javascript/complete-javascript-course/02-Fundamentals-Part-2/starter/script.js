@@ -73,3 +73,10 @@ const activeDeveloperNames = users
   .sort((a, b) => a.localeCompare(b));
 
 console.log(activeDeveloperNames);
+
+// BASIC ARRAY OPERATIONS AND ARRAYS
+
+const friends = ["Suhag", "Rahul", "Karan", "Mukesh"];
+console.log(`This is an array of my friends ${friends}`);
+
+// Adding elements to our Array:- We can add elements to an array using the push() method, which adds elements to the end of the array, or the unshift() method, which adds elements to the beginning of the array.
