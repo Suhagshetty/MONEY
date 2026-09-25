@@ -80,3 +80,32 @@ const friends = ["Suhag", "Rahul", "Karan", "Mukesh"];
 console.log(`This is an array of my friends ${friends}`);
 
 // Adding elements to our Array:- We can add elements to an array using the push() method, which adds elements to the end of the array, or the unshift() method, which adds elements to the beginning of the array.
+
+friends.push("Rishab");
+console.log(friends);
+// (5) ['Suhag', 'Rahul', 'Karan', 'Mukesh', 'Rishab']
+
+friends.unshift("Prashanth", "Akshay");
+console.log(friends);
+// (7) ['Prashanth', 'Akshay', 'Suhag', 'Rahul', 'Karan', 'Mukesh', 'Rishab']
+
+// Removing elements from our Array:- We can remove elements from an array using the pop() method, which removes the last element of the array, or the shift() method, which removes the first element of the array.
+
+friends.pop();
+console.log(friends);
+// (6) ['Prashanth', 'Akshay', 'Suhag', 'Rahul', 'Karan', 'Mukesh']
+
+friends.shift();
+console.log(friends);
+// (5) ['Akshay', 'Suhag', 'Rahul', 'Karan', 'Mukesh']
+
+// IndexOf() method:- The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+console.log(friends.indexOf("Suhag")); // 1
+console.log(friends.indexOf("Akshay")); // 0
+console.log(friends.indexOf("Sumana")); // -1
+
+// Includes() method:- The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+
+console.log(friends.includes("Suhag")); // TRUE
+console.log(friends.includes("Sumana")); // FALSE
