@@ -295,3 +295,19 @@ for (let i = 0; i < employees.length; i++) {
   }
 }
 console.log(`Total developer salary is ${totalSalary}`);
+
+// Challenge:- Don't copy the example above. Build a shopping cart checkout system.
+
+const cart = [
+  { product: "Laptop", price: 65000, quantity: 1 },
+  { product: "Mouse", price: 1200, quantity: 2 },
+  { product: "Keyboard", price: 3000, quantity: 1 },
+  { product: "Monitor", price: 15000, quantity: 2 },
+];
+
+let totalCost = 0;
+for (let i = 0; i < cart.length; i++) {
+  const itemTotal = cart[i].price * cart[i].quantity;
+  totalCost += itemTotal;
+  console.log(`Item: ${cart[i].product}, Total Cost: ${itemTotal}`);
+}
