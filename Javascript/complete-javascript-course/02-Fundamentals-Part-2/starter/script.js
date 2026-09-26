@@ -262,3 +262,36 @@ if (mark.calcBmi() > John.calcBMI) {
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
+
+// Industry example: Employee salary processing
+
+const employees = [
+  {
+    name: "Suhag",
+    role: "Developer",
+    salary: 50000,
+  },
+  {
+    name: "Rahul",
+    role: "Designer",
+    salary: 80000,
+  },
+  {
+    name: "Karan",
+    role: "Manager",
+    salary: 10000,
+  },
+  {
+    name: "Mukesh",
+    role: "Developer",
+    salary: 60000,
+  },
+];
+let totalSalary = 0;
+for (let i = 0; i < employees.length; i++) {
+  if (employees[i].role === "Developer") {
+    console.log(`${employees[i].name} earns ${employees[i].salary}`);
+    totalSalary = totalSalary + employees[i].salary;
+  }
+}
+console.log(`Total developer salary is ${totalSalary}`);
