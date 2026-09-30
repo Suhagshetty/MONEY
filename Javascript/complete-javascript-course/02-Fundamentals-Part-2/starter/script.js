@@ -310,4 +310,6 @@ for (let i = 0; i < cart.length; i++) {
   const itemTotal = cart[i].price * cart[i].quantity;
   totalCost += itemTotal;
   console.log(`Item: ${cart[i].product}, Total Cost: ${itemTotal}`);
+
+  console.log("Suhag S Shetty");
 }
